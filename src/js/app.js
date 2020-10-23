@@ -1,48 +1,5 @@
 const gameboard = document.getElementsByClassName('game-board')[0];
 
-const im = document.createElement('img');
-im.style = ' display:flex;';
-im.setAttribute('src', '../src/img/goblin.png');
-
-gameboard.insertBefore(im, gameboard.firstChild);
-
-const im1 = document.createElement('img');
-im1.style = ' display:flex;';
-im1.setAttribute('src', './src/img/goblin.png');
-
-gameboard.insertBefore(im1, gameboard.firstChild);
-
-const im2 = document.createElement('img');
-im2.style = ' display:flex;';
-im2.setAttribute('src', '/src/img/goblin.png');
-
-gameboard.insertBefore(im2, gameboard.firstChild);
-
-const im3 = document.createElement('img');
-im3.style = ' display:flex;';
-im3.setAttribute('src', 'src/img/goblin.png');
-
-gameboard.insertBefore(im3, gameboard.firstChild);
-
-const im4 = document.createElement('img');
-im4.style = ' display:flex;';
-im4.setAttribute('src', '../img/goblin.png');
-
-gameboard.insertBefore(im4, gameboard.firstChild);
-
-
-const im5 = document.createElement('img');
-im5.style = ' display:flex;';
-im5.setAttribute('src', 'img/goblin.png');
-
-gameboard.insertBefore(im5, gameboard.firstChild);
-
-const im6 = document.createElement('img');
-im6.style = ' display:flex;';
-im6.setAttribute('src', './img/goblin.png');
-
-gameboard.insertBefore(im6, gameboard.firstChild);
-
 for (let i = 4; i > 0; i -= 1) {
   const raw = document.createElement('div');
   raw.className = `raw-${i}`;
@@ -59,7 +16,7 @@ let cellCol = 0;
 
 const image = document.createElement('img');
 image.style = ' display:flex;';
-image.setAttribute('src', '../src/img/goblin.png');
+image.setAttribute('src', 'https://raw.githubusercontent.com/madivira/ahj-dom/master/src/img/goblin.png');
 
 function showImage() {
   const rawRandom = Math.floor(Math.random() * 4 + 1);
