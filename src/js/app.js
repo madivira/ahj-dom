@@ -33,4 +33,4 @@ function showImage() {
   }
 }
 
-setInterval(showImage, 1000);
+setInterval(showImage, 10000);
