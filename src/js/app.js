@@ -12,9 +12,9 @@ for (let i = 4; i > 0; i -= 1) {
 }
 
 const column = document.getElementsByClassName('column');
-column.forEach(element => {
-    element.style = 'width: 120px; height: 120px; color: blue; display: inline-block; border: 4px solid black; margin-left: 4px';
-});
+for (const element of column) {
+  element.style = 'width: 120px; height: 120px; color: blue; display: inline-block; border: 4px solid black; margin-left: 4px';
+}
 
 let cellRaw = 0;
 let cellCol = 0;
