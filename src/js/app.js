@@ -6,11 +6,16 @@ for (let i = 4; i > 0; i -= 1) {
   gameboard.insertBefore(raw, gameboard.firstChild);
   for (let j = 4; j > 0; j -= 1) {
     const col = document.createElement('div');
-    col.style = 'width: 120px; height: 120px; color: blue; display: inline-block; border: 4px solid black; margin-left: 4px';
-    col.className = `col-${j}`;
+    col.className = `column col-${j}`;
     raw.insertBefore(col, raw.firstChild);
   }
 }
+
+const column = document.getElementsByClassName('column');
+column.forEach(element => {
+    element.style = 'width: 120px; height: 120px; color: blue; display: inline-block; border: 4px solid black; margin-left: 4px';
+});
+
 let cellRaw = 0;
 let cellCol = 0;
 
